@@ -18,6 +18,7 @@ It’s designed as a beginner-friendly project to practice front-end web develop
 
 ## 📁 Project Structure
 
+~~~ 
 project-folder/
 ├── index.html
 ├── about.html
@@ -26,8 +27,7 @@ project-folder/
 │   └── style.css
 └── images/
     └── (optional blog images)
-
-
+~~~
 
 ---
 
@@ -57,4 +57,3 @@ project-folder/
 ## 📄 License
 
 This project is free to use for personal and educational purposes.
-
