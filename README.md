@@ -19,13 +19,13 @@ It’s designed as a beginner-friendly project to practice front-end web develop
 ## 📁 Project Structure
 
 project-folder/
-│── index.html
-│── about.html
-│── blog-post.html
-│── styles/
-│ └── style.css
-│── images/
-│ └── (optional blog images)
+├── index.html
+├── about.html
+├── blog-post.html
+├── styles/
+│   └── style.css
+└── images/
+    └── (optional blog images)
 
 
 
