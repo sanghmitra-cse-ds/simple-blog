@@ -41,8 +41,22 @@ project-folder/
 ## 🚀 Getting Started
 
 1. Clone or download the project folder.
-2. Open `index.html` in your browser.
-3. Customize the content and styles as you like.
+2. Open `index.html` in your browser or serve the folder with a static server (e.g. `npx serve` or `python -m http.server`).
+3. Customize the content and styles in the files below.
+
+## 📁 Files added / modified
+
+- index.html — Homepage with blog previews
+- blog-post.html — Single post template
+- about.html — About page
+- styles/style.css — All styles (variables, layout, responsive rules)
+- images/ — Place your images here (use 1200x800 for hero, 600x400 for thumbnails)
+
+## 🛠 Development tips
+
+- Change color variables in `styles/style.css` under `:root`.
+- Duplicate `blog-post.html` to add more posts, or create a simple templating workflow.
+- For local development, run a static server so relative images and links behave consistently.
 
 ---
 
