@@ -7,22 +7,24 @@
     <title>Login — SimpleBlog</title>
     <link rel="stylesheet" href="styles/style.css" />
     <script defer src="scripts/theme-toggle.js"></script>
+	<script defer src="scripts/nav-toggle.js"></script>
 </head>
 
 <body class="dark-theme">
     <header class="site-header">
-        <div class="container header-inner">
-            <a class="logo" href="index.html">SimpleBlog</a>
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="login.html">Login</a>
-                <a href="register.html" class="btn">Register</a>
-                <a href="#footer">Contact</a>
-                <button id="themeToggle" class="theme-toggle">☀️</button>
-            </nav>
-        </div>
-    </header>
+		<div class="container header-inner">
+			<a class="logo" href="index.html">SimpleBlog</a>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+			<nav class="nav" id="mainNav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="login.html">Login</a>
+				<a href="register.html" class="btn">Register</a>
+				<a href="#footer">Contact</a>
+				<button id="themeToggle" class="theme-toggle">☀️</button>
+			</nav>
+		</div>
+	</header>
 
     <main>
         <form class="auth-form">

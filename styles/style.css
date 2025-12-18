@@ -17,6 +17,7 @@ body{
 	color:var(--text);
 	background:var(--bg);
 	line-height:1.6;
+	padding-top: 70px; /* Adjust if your header is taller/shorter */
 }
 
 .container{
@@ -29,6 +30,11 @@ body{
 .site-header{
 	border-bottom:1px solid #e8e8e8;
 	background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
 }
 .header-inner{
 	display:flex;
@@ -246,3 +252,56 @@ form.auth-form button:hover {
 	border-radius: 6px;
 }
 
+/* Responsive Navbar */
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav-toggle {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: var(--text);
+	cursor: pointer;
+	margin-left: 18px;
+}
+
+@media (max-width: 700px) {
+	.header-inner {
+		flex-direction: row;
+		position: relative;
+	}
+	.nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: #1b1d21; /* changed from #222 to a lighter gray */
+		flex-direction: column;
+		align-items: flex-start;
+		width: 220px;
+		height: 100vh;
+		padding: 80px 24px 24px 24px;
+		border-radius: 0 0 0 12px;
+		/* box-shadow: 0 4px 16px rgba(0,0,0,0.15); */
+		display: none;
+		z-index: 9999;
+	}
+	.nav a:hover{color:var(--text)}
+	.nav.open {
+		display: flex;
+	}
+	.nav a, .nav .btn, .nav .theme-toggle {
+		margin: 12px 0;
+		width: 100%;
+	}
+	.nav-toggle {
+		display: block;
+		z-index: 10000;
+		background: none;
+		color: white;
+		border: none;
+		position: relative;
+	}
+}
