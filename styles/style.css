@@ -49,6 +49,32 @@ body{
 }
 .nav a:hover{color:var(--text)}
 
+/* Button styles for register link */
+.nav .btn{
+  background:var(--accent);
+  color:#fff;
+  padding:6px 12px;
+  border-radius:6px;
+}
+
+/* Theme toggle button */
+.nav .theme-toggle {
+	background-color: #000; /* Default: black for light theme */
+	color: #fff;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin-left: 1rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme .theme-toggle {
+	background-color: #fff; /* White for dark theme */
+	color: #000;
+}
+
 /* Hero */
 .hero{
 	padding:48px 0;
@@ -103,3 +129,120 @@ body{
 	.post-card img{height:140px}
 	.post-hero{height:220px}
 }
+
+.site-footer {
+  background:#111;
+  color:#ccc;
+  margin-top:60px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:32px;
+  padding:40px 0;
+}
+
+.site-footer h3,
+.site-footer h4{
+  color:#fff;
+}
+
+.site-footer a{
+  color:#ccc;
+  text-decoration:none;
+}
+.site-footer a:hover{
+  color:var(--accent);
+}
+
+.socials a{
+  display:inline-block;
+  margin-right:12px;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+	background-color: #121212;
+	color: #ffffff;
+}
+
+body.dark-theme a {
+	color: #bb86fc;
+}
+
+body.dark-theme .site-header {
+	background-color: #1f1f1f;
+}
+
+body.dark-theme .site-footer {
+	background-color: #1f1f1f;
+}
+
+/* Login and Register Page Styles */
+form.auth-form {
+	max-width: 400px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form.auth-form.dark-theme {
+	background: #1f1f1f;
+	color: #ffffff;
+}
+
+form.auth-form h2 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+form.auth-form input {
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+form.auth-form button {
+	width: 100%;
+	padding: 0.75rem;
+	background: #007bff;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+form.auth-form button:hover {
+	background: #0056b3;
+}
+
+/* Vertical Social Links */
+.vertical-socials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 0.5rem;
+}
+
+.vertical-socials a {
+	display: flex;
+	align-items: center;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+.vertical-socials img,
+.footer-grid img {
+	margin-right: 0.7em;
+	width: 28px;
+	height: 28px;
+	border-radius: 6px;
+}
+

@@ -5,14 +5,19 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Train Ride Sketches — SimpleBlog</title>
 	<link rel="stylesheet" href="styles/style.css" />
+	<script defer src="scripts/theme-toggle.js"></script>
 </head>
-<body>
+<body class="dark-theme">
 	<header class="site-header">
 		<div class="container header-inner">
 			<a class="logo" href="index.html">SimpleBlog</a>
 			<nav class="nav">
 				<a href="index.html">Home</a>
 				<a href="about.html">About</a>
+				<a href="login.html">Login</a>
+				<a href="register.html" class="btn">Register</a>
+				<a href="#footer">Contact</a>
+				<button id="themeToggle" class="theme-toggle">☀️</button>
 			</nav>
 		</div>
 	</header>
@@ -32,9 +37,45 @@
 		</article>
 	</main>
 
-	<footer class="site-footer">
-		<div class="container">
-			<p>© SimpleBlog</p>
+	<footer id="footer" class="site-footer">
+		<div class="container footer-grid">
+			<div>
+				<h3>SimpleBlog</h3>
+				<p>Sharing stories, ideas & code.</p>
+				<p>© 2025 SimpleBlog. All rights reserved.</p>
+			</div>
+			<div>
+				<h4>Contact</h4>
+				<p>
+					<a href="mailto:hello@simpleblog.com">
+						<img src="images/email.png" alt="Email Icon" width="24" height="24" />
+						hello@simpleblog.com
+					</a>
+				</p>
+				<p>
+					<a href="https://wa.me/919999999999">
+						<img src="images/whatapps.png" alt="WhatsApp Icon" width="24" height="24" />
+						+91 99999 99999
+					</a>
+				</p>
+			</div>
+			<div>
+				<h4>Follow</h4>
+				<div class="socials vertical-socials">
+					<a href="#">
+						<img src="images/insta.png" alt="Instagram Icon" width="28" height="28" />
+						Instagram
+					</a>
+					<a href="#">
+						<img src="images/twitter.png" alt="Twitter Icon" width="28" height="28" />
+						Twitter
+					</a>
+					<a href="#">
+						<img src="images/fb.png" alt="Facebook Icon" width="28" height="28" />
+						Facebook
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
